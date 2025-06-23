@@ -3339,3 +3339,21 @@ input, select, textarea {
 			}
 
 	}
+
+.circle-image {
+  width: 100%;
+  max-width: 350px; /* batas maksimal ukuran */
+  aspect-ratio: 1 / 1; /* mempertahankan rasio 1:1 */
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.image.featured.circle {
+  position: relative;
+}
+
+.image.featured.circle::before {
+  content: none !important;
+}
